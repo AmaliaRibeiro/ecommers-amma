@@ -1,0 +1,30 @@
+.bgFooter {
+    background-color: #10100e;
+    height: 400px;
+    color: 'white'
+}
+.bgTitle {
+    color: rgb(255, 199, 247 ) ;
+    font-size: 20px;
+}
+.bgSubtitle {
+    color: rgb(255, 215, 170);
+    font-size: 18px;
+}
+.followConteiner {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px
+}
+.followContact {
+    padding: 10px;
+    margin-top: 10px;
+   text-align: center;
+}
+.finally {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+

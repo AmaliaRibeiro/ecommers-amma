@@ -9,10 +9,12 @@ import { Offers } from "./Pages/Offers";
 import { Cart } from "./Pages/Cart";
 import { Contact } from "./Pages/Contact";
 
+
 function App() {
+
   return (
     <>
-    
+
       <Routes>
         <Route path="/" element={<Layout/>}> 
           <Route index element={<Home />}/>

@@ -6,34 +6,42 @@ import Col from 'react-bootstrap/Col'
 
 import BgHeader from "./Header.module.css"
 
-export const Layout = () => {
- return (
-    <>
-    <div className={BgHeader.bgLayout}>
-     <Container >
-        
-     <nav >
-    
-        <Row className={BgHeader.divisorVertical} >
-        
-          <Col><Link className={BgHeader.a} to= "/">Home</Link></Col>
-          <Col><Link className={BgHeader.a} to= "/about-us"> Nosotros</Link></Col>
-          <Col><Link className={BgHeader.a} to= "/products"> Productos</Link></Col>
-          <Col><Link className={BgHeader.a} to= "/offers"> Ofertas</Link></Col>
-          <Col><Link className={BgHeader.a} to= "/cart"> Carrito </Link></Col>
-          <Col><Link className={BgHeader.a} to= "/contact"> Contacto</Link></Col>
-    
-       </Row>
-       </nav>
-     </Container>
-     </div>
-       <Outlet/>
+import Footer from "./Footer"
+import Carousel from "./Carousel"
 
-       <footer>
-         <h2>Este es el footer</h2>
-       </footer>
-     
-    </>
-    
- )
+export const Layout = () => {
+   return (
+      <>
+         <div className={BgHeader.bgLayout}>
+            <Container >
+
+               <nav >
+
+                  <Row className={BgHeader.divisorVertical} >
+
+                     <Col><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl`}
+                     to="/">Home</Link></Col>
+                     <Col><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl`}
+                     to="/about-us"> Nosotros</Link></Col>
+                     <Col><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl`}
+                     to="/products"> Productos</Link></Col>
+                     <Col><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl`}
+                     to="/offers"> Ofertas</Link></Col>
+                     <Col><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl`} 
+                     to="/cart"> Carrito </Link></Col>
+                     <Col><Link className={`${BgHeader.a}  text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl`}
+                     to="/contact"> Contacto</Link></Col>
+
+                  </Row>
+               </nav>
+            </Container>
+         </div>
+         <Carousel />
+         <Outlet />
+
+         <Footer />
+
+      </>
+
+   )
 }

@@ -13,6 +13,19 @@
 
   }
 .a {
-    text-decoration: none;
-    color: white
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: inherit; /* Asegúrate de que el color se herede */
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.dropdown-toggle::after {
+  display: none; /* Opcional: quita el icono de flecha */
 }

@@ -6,7 +6,7 @@ import { Home } from "./Pages/Home";
 import { AboutUs } from "./Pages/AboutUs";
 import { Products } from "./Pages/Products";
 import { Offers } from "./Pages/Offers";
-import { Cart } from "./Pages/Cart";
+import { CartPage } from "./Pages/CartPage";
 import { Contact } from "./Pages/Contact";
 import { Winter } from './Pages/Winter';
 import { Summer } from './Pages/Summer';
@@ -23,7 +23,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/offers" element={<Offers />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<CartPage />} />
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/products" element={<Products />}>

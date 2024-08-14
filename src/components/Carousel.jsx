@@ -5,30 +5,33 @@ import Row from 'react-bootstrap/Row';
 
 import bgCarousel from './Carousel.module.css'
 
-import imagen1 from '../images/fondosImages/girlPink.jpg'
-import imagen2 from '../images/fondosImages/fondo9.jpg'
-import imagen3 from '../images/fondosImages/whiteTenis.jpg'
-import imagen4 from '../images/fondosImages/fondo7.jpg'
+import imagen3 from '../images/fondosImages/welcome to amma.png'
+
 
 
 function Carousel() {
     
   return (
     <>
+    
     <div className={bgCarousel.bgCarousel}>
+    
     <Container>
       <Row>
         <Col>
-          <Image src={imagen1} className='img-fluid'/>
+         
         </Col>
         <Col >
-          <Image src={imagen2} className='img-fluid' />
+          
         </Col>
         <Col >
-          <Image src={imagen3} className='img-fluid' />
+        <Image src={imagen3} className='img-fluid' />
         </Col>
         <Col >
-          <Image src={imagen4} className='img-fluid'/>
+          
+        </Col>
+        <Col >
+          
         </Col>
       </Row>
     </Container>

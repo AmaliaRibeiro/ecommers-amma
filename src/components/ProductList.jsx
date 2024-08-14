@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { ProductCard }  from './ProductCard';
 import { useCart } from '../contexts/CartContexts';
 
-import calzadoInvierno1 from '../images/fondosImages/fondo5.jpg';
-import calzadoInvierno2 from '../images/fondosImages/fondo7.jpg';
+import calzadoInvierno1 from '../images/fondosImages/whiteShoes.jpg';
+import calzadoInvierno2 from '../images/fondosImages/blackShoes.jpg';
 
 export const ProductList = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import calzadoInvierno1 from '../images/fondosImages/fondo5.jpg';
-import calzadoInvierno2 from '../images/fondosImages/fondo7.jpg';
+import calzadoInvierno1 from '../images/fondosImages/whiteShoes.jpg';
+import calzadoInvierno2 from '../images/fondosImages/blackShoes.jpg';
 import blackShoes from '../images/fondosImages/blackShoes.jpg';
 
 const imageMap = {

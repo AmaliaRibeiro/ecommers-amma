@@ -2,3 +2,10 @@
     background-image: url("../images/fondosImages/fondoBlack.jpg");
     background-size: cover;
 }
+
+.imgFluid {
+    width: 90%;
+    height: 80%;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio de la columna */
+    max-height: 300px; /* Ajusta la altura máxima según lo necesites */
+}

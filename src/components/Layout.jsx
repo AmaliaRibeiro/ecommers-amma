@@ -16,7 +16,7 @@ if(!cartItems) {
    return (
       <>
         <Header />
-         <Carousel />
+        <Carousel />
          <Outlet />
 
          <Footer />

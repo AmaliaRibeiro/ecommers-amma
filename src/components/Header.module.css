@@ -1,8 +1,8 @@
 .bgLayout {
    background-color: #10100e;
-   height: 120px;
-   padding-top: 40px ;
-
+   height: 100%;
+   padding-top: 40px;
+   padding-bottom: 40px;
 }
 .divisorVertical {
     border: 1.5px solid;
@@ -15,8 +15,15 @@
 .a {
     text-decoration: none !important;
     color: white !important;
+   display: grid;
+   place-items: center;
+   width: 100%;
+   height: 100%;
 }
-
+.logo {
+  max-width: 100%;
+  height: auto;
+}
 .dropdown-toggle {
   background-color: transparent;
   border: none;
@@ -28,4 +35,19 @@
 
 .dropdown-toggle::after {
   display: none; /* Opcional: quita el icono de flecha */
+}
+
+@media (max-width: 768px) { 
+.divisorVertical {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center;    /* Centra horizontalmente */
+  text-align: center;     /* Centra el texto */
+}
+
+.navItem {
+  margin: 10px 0; /* Espacio entre las palabras */
+    font-size: 1.2rem; /* Ajusta el tamaño del texto si es necesario */
+  
+}
 }

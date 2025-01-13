@@ -1,11 +1,13 @@
+
 import { Link } from "react-router-dom";
 
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
-
 import BgHeader from "./Header.module.css"
+
+import AmmaLogo from '../images/fondosImages/AmmaLogo.png';
 
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import { useCart } from '../contexts/CartContexts'; // Importa tu contexto
@@ -35,15 +37,24 @@ if(!cartItems) {
                <nav >
 
                   <Row className={BgHeader.divisorVertical} >
-
-                     <Col><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl`}
+                  <Col className={BgHeader.navItem}>
+                     <Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl`}
+                        to="/">
+                           <img src={AmmaLogo}
+                           alt= "logo" 
+                           className={BgHeader.logo}/>
+                           </Link>
+                        </Col>
+                     <Col  className={BgHeader.navItem}>
+                     <Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl`}
                         to="/">Home</Link></Col>
 
-                     <Col><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl`}
+                     <Col className={BgHeader.navItem} ><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl`}
                         to="/about-us"> Nosotros</Link></Col>
 
-                     <Col>
-                        <Link to="/products">
+                     <Col className={BgHeader.navItem}>
+                        <Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl`} 
+                        to="/products">
                            <DropdownMenu
                               label="Productos"
                               items={productMenuItems}
@@ -51,26 +62,30 @@ if(!cartItems) {
                         </Link>
                      </Col>
 
-                     <Col><Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl`}
-                        to="/offers"> Ofertas</Link></Col>
+                     <Col className={BgHeader.navItem}>
+                     <Link className={`${BgHeader.a} text-base sm:text-lg md:text-xl lg:text-2xl`}
+                        to="/offers"> Ofertas</Link>
+                     </Col>
 
-                     <Col>
+                     
+
+                     <Col className={BgHeader.navItem}><Link className={`${BgHeader.a}  text-base sm:text-lg md:text-xl lg:text-2xl`}
+                        to="/contact"> Contacto</Link></Col>
+
+                     <Col className={BgHeader.navItem}>
                       <Link className={`${BgHeader.a}  text-base sm:text-lg md:text-xl lg:text-2xl flex items-center`}
                         to="/cart"
                      >
-                        <PiShoppingCartSimpleFill className="mr-2" />
-                        Carrito
+                        
+                        <PiShoppingCartSimpleFill />
+                        
                         {cartItems.length > 0 && (
                            <span className="ml-2 bg-red-500 text-white text-xs rounded-full px-2 py-1">
                               {cartItems.length}
-                           </span>
+                           </span> 
                         )}
                      </Link>
                      </Col>
-
-                     <Col><Link className={`${BgHeader.a}  text-base sm:text-lg md:text-xl lg:text-2xl`}
-                        to="/contact"> Contacto</Link></Col>
-
                   </Row>
                </nav>
             </Container>

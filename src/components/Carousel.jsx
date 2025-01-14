@@ -5,38 +5,51 @@ import Row from 'react-bootstrap/Row';
 
 import bgCarousel from './Carousel.module.css'
 
-import imagen1 from '../images/fondosImages/bikinis4.jpg'
-import imagen2 from '../images/fondosImages/zapatos5.jpg'
-import imagen3 from '../images/fondosImages/ropafit2.jpg'
-import imagen4 from '../images/fondosImages/accesorios1.jpg'
+import imagen1 from '../images/fondosImages/ropadepor.jpg'
+import imagen2 from '../images/fondosImages/zapasDepor.jpg'
+import imagen3 from '../images/fondosImages/biki.jpg'
+import imagen4 from '../images/fondosImages/otono.jpg'
 
 
 function Carousel() {
-    
+
   return (
     <>
-    
-    <div className={bgCarousel.bgCarousel}>
-    
-    <Container>
-      <Row>
-      <Col xs={12} sm={6} md={3}>
-        <Image src={imagen1} className={bgCarousel.imgFluid} />
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-        <Image src={imagen2} className={bgCarousel.imgFluid} />
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-        <Image src={imagen3} className={bgCarousel.imgFluid} />
-        </Col>
-        <Col xs={12} sm={6} md={3}>
-        <Image src={imagen4} className={bgCarousel.imgFluid} />
-        </Col>
-      </Row>
-    </Container>
-    </div>
+
+      <div className={bgCarousel.bgCarousel}>
+
+        <Container>
+          <Row>
+            <Col className={bgCarousel.imageContainer}>
+              <Image src={imagen1} className={bgCarousel.imgFluid} />
+              <div className={bgCarousel.overlay}>
+                <p className={bgCarousel.overlayText}>¡ZAPATILLAS URBANAS!</p>
+              </div>
+            </Col>
+
+            <Col className={bgCarousel.imageContainer}>
+              <Image src={imagen2} className={bgCarousel.imgFluid} />
+              <div className={bgCarousel.overlay}>
+                <p className={bgCarousel.overlayText}>¡ZAPATILLAS DEPORTIVAS!</p>
+              </div>
+            </Col>
+            <Col className={bgCarousel.imageContainer}>
+              <Image src={imagen3} className={bgCarousel.imgFluid} />
+              <div className={bgCarousel.overlay}>
+                <p className={bgCarousel.overlayText}>¡BIKINIS Y OJOTAS!</p>
+              </div>
+            </Col>
+            <Col className={bgCarousel.imageContainer}>
+              <Image src={imagen4} className={bgCarousel.imgFluid} />
+              <div className={bgCarousel.overlay}>
+                <p className={bgCarousel.overlayText}>¡SUECOS Y SANDALIAS!</p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </>
-  );  
+  );
 }
 
 export default Carousel;

@@ -73,7 +73,7 @@ if(!cartItems) {
                         to="/contact"> Contacto</Link></Col>
 
                      <Col className={BgHeader.navItem}>
-                      <Link className={`${BgHeader.a}  text-base sm:text-lg md:text-xl lg:text-2xl flex items-center`}
+                      <Link className={`${BgHeader.a}  text-base sm:text-lg md:text-xl lg:text-2xl items-center`}
                         to="/cart"
                      >
                         

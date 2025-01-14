@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import BgHeader from "./Header.module.css"
 
-import AmmaLogo from '../images/fondosImages/AmmaLogo.png';
+import AmmaLogo from '../images/fondosImages/ammaLogo.png';
 
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import { useCart } from '../contexts/CartContexts'; // Importa tu contexto

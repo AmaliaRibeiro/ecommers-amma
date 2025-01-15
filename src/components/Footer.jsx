@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { FaInstagram, FaFacebook} from 'react-icons/fa'
+import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import { CgMail } from 'react-icons/cg'
 import { CiLocationOn } from 'react-icons/ci'
+import { FaWhatsapp } from "react-icons/fa";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -20,10 +21,11 @@ function Footer() {
             <div className={bgFooter.bgFooter}>
 
                 <div>
-                    <div className={bgFooter.followConteiner}>
+                    <div className={bgFooter.followContainer}>
                         <h1 className={bgFooter.bgTitle}>Seguinos en nuestras redes sociales</h1>
-                        <a href="https://www.instagram.com/amma_ribeiro_zapatos/" target="_blank"><FaInstagram style={iconsStyles} /></a>
+                        <a href="https://www.instagram.com/amma_ribeicoiro_zapatos/" target="_blank"><FaInstagram style={iconsStyles} /></a>
                         <a href="https://www.facebook.com/profile.php?id=100080571537645" target="_blank"><FaFacebook style={iconsStyles} /></a>
+                        <a href="https://wa.me/5493764210156" target="_blank"><FaWhatsapp style={iconsStyles} /></a>
                     </div>
                     <Container>
                         <Row className={BgHeader.divisorVertical} >
@@ -36,17 +38,24 @@ function Footer() {
 
                         </Row>
                     </Container>
+
                     <div className={bgFooter.followContact}>
-                        <CgMail style={iconsStyles} /><p className={bgFooter.bgSubtitle}> amalita9421@gmail.com</p>
-                        <CiLocationOn style={iconsStyles} /><p className={bgFooter.bgSubtitle}>Posadas-Misiones-Venta exclusiva online</p>
-                        
-                    </div>
-                    <div className={bgFooter.finally}>
-                            <Row>
-                                <Col>Copyright By Amma Shoes-2023</Col>
-                                <Col>Todos los derechos reservados</Col>
-                            </Row>
+                        <div className={bgFooter.contactItem}>
+                            <CgMail style={iconsStyles} />
+                            <p className={bgFooter.bgSubtitle}> amalita9421@gmail.com</p>
                         </div>
+                        <div className={bgFooter.contactItem}>
+                            <CiLocationOn style={iconsStyles} />
+                            <p className={bgFooter.bgSubtitle}>Posadas-Misiones-Venta exclusiva online</p>
+                        </div>
+                    </div>
+
+                    <div className={bgFooter.finally}>
+
+                        <Col className={bgFooter.textItem}>Copyright By Amma Shoes-2023</Col>
+                        <Col className={bgFooter.textItem}>Todos los derechos reservados</Col>
+
+                    </div>
                 </div>
             </div>
 

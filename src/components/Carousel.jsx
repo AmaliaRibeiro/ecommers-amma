@@ -20,26 +20,26 @@ function Carousel() {
 
         <Container>
           <Row>
-            <Col className={bgCarousel.imageContainer}>
+            <Col xs={12} md={6} lg={3} className={bgCarousel.imageContainer}>
               <Image src={imagen1} className={bgCarousel.imgFluid} />
               <div className={bgCarousel.overlay}>
                 <p className={bgCarousel.overlayText}>¡ZAPATILLAS URBANAS!</p>
               </div>
             </Col>
 
-            <Col className={bgCarousel.imageContainer}>
+            <Col xs={12} md={6} lg={3} className={bgCarousel.imageContainer}>
               <Image src={imagen2} className={bgCarousel.imgFluid} />
               <div className={bgCarousel.overlay}>
                 <p className={bgCarousel.overlayText}>¡ZAPATILLAS DEPORTIVAS!</p>
               </div>
             </Col>
-            <Col className={bgCarousel.imageContainer}>
+            <Col xs={12} md={6} lg={3} className={bgCarousel.imageContainer}>
               <Image src={imagen3} className={bgCarousel.imgFluid} />
               <div className={bgCarousel.overlay}>
                 <p className={bgCarousel.overlayText}>¡BIKINIS Y OJOTAS!</p>
               </div>
             </Col>
-            <Col className={bgCarousel.imageContainer}>
+            <Col xs={12} md={6} lg={3} className={bgCarousel.imageContainer}>
               <Image src={imagen4} className={bgCarousel.imgFluid} />
               <div className={bgCarousel.overlay}>
                 <p className={bgCarousel.overlayText}>¡SUECOS Y SANDALIAS!</p>

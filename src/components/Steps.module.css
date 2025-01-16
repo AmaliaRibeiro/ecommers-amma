@@ -1,0 +1,50 @@
+.stepTitle {
+    font-size: 3em;
+    font-weight:600;
+   text-align: center;
+    color:white;
+    background-color: black;
+    margin-bottom: 0;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que sea responsive */
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 30px;
+    background-color: black;
+  }
+ 
+  .card {
+    background-color: rgb(253, 252, 255); /* Fondo negro */
+    color: black; /* Texto blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    width: 250px; /* Ancho fijo para todas las tarjetas */
+    text-align: center; /* Centrar el contenido */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Incrementa la sombra */
+  }
+  
+  .number {
+    font-size: 2rem; /* Tamaño grande para el número */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size:medium;
+    line-height: 1.5;
+  }

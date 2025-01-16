@@ -5,20 +5,19 @@ import { useCart } from '../contexts/CartContexts'; // Importa tu contexto
 import Footer from "./Footer"
 import Header from "./Header";
 import Carousel from "./Carousel"
-import Navbar from "./Navbar"
+
 
 export const Layout = () => {
 
    const { cartItems } = useCart(); // Obtén los ítems del carrito desde el contexto
 
-if(!cartItems) {
-   return <div>Loading...</div>
-}
+   if (!cartItems) {
+      return <div>Loading...</div>
+   }
    return (
       <>
-        <Navbar/>
-        <Carousel />
-        <Header />
+         <Header />
+         <Carousel />
          <Outlet />
          <Footer />
 

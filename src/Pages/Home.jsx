@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import styTyp from "./styles/TypingEffect.module.css";
-
-import styleHome from "./styles/Home.module.css";
+import BuySteps from "../components/BuySteps"
+import Sale from "../components/Sale";
 
 export const Home = () => {
     useEffect(() => {
@@ -17,8 +17,13 @@ export const Home = () => {
   }, []);
 
   return (
+    <>
     <div className={styTyp.container}>
   <span id="typed-text" className={styTyp.typedText}></span>
 </div>
+
+<BuySteps />
+<Sale />
+</>
   );
 };

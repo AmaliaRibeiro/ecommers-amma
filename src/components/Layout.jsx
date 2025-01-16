@@ -5,6 +5,7 @@ import { useCart } from '../contexts/CartContexts'; // Importa tu contexto
 import Footer from "./Footer"
 import Header from "./Header";
 import Carousel from "./Carousel"
+import Navbar from "./Navbar"
 
 export const Layout = () => {
 
@@ -15,10 +16,10 @@ if(!cartItems) {
 }
    return (
       <>
-        <Header />
+        <Navbar/>
         <Carousel />
+        <Header />
          <Outlet />
-
          <Footer />
 
       </>

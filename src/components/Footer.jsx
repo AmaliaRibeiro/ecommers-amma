@@ -8,7 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 
-import BgHeader from "./Header.module.css"
+import bgNavbar from "./Navbar.module.css"
 import bgFooter from './Footer.module.css'
 
 const iconsStyles = { color: 'white', fontSize: '50px', padding: '8px' }
@@ -28,13 +28,13 @@ function Footer() {
                         <a href="https://wa.me/5493764210156" target="_blank"><FaWhatsapp style={iconsStyles} /></a>
                     </div>
                     <Container>
-                        <Row className={BgHeader.divisorVertical} >
+                        <Row className={bgNavbar.divisorVertical} >
 
-                            <Col><Link className={BgHeader.a} to="/">Home</Link></Col>
-                            <Col><Link className={BgHeader.a} to="/about-us"> Como comprar</Link></Col>
-                            <Col><Link className={BgHeader.a} to="/products"> Productos</Link></Col>
-                            <Col><Link className={BgHeader.a} to="/offers"> Preguntas frecuentes</Link></Col>
-                            <Col><Link className={BgHeader.a} to="/cart"> Tabla de talles </Link></Col>
+                            <Col><Link className={bgNavbar.a} to="/">Home</Link></Col>
+                            <Col><Link className={bgNavbar.a} to="/about-us"> Como comprar</Link></Col>
+                            <Col><Link className={bgNavbar.a} to="/products"> Productos</Link></Col>
+                            <Col><Link className={bgNavbar.a} to="/offers"> Preguntas frecuentes</Link></Col>
+                            <Col><Link className={bgNavbar.a} to="/cart"> Tabla de talles </Link></Col>
 
                         </Row>
                     </Container>

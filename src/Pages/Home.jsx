@@ -1,5 +1,24 @@
+import React, { useEffect } from "react";
+import Typed from "typed.js";
+import styTyp from "./styles/TypingEffect.module.css";
+
+import styleHome from "./styles/Home.module.css";
+
 export const Home = () => {
-    return (
-        <h2> Home page </h2>
-    )
-}
+    useEffect(() => {
+        const typed = new Typed("#typed-text", {
+          strings: ["ZAPATILLAS URBANAS", "BIKINIS EXCLUSIVAS", "ROPA DEPORTIVA", "A PEDIDO Y EN STOCK"],
+          typeSpeed: 50, // Velocidad al escribir
+          backSpeed: 30, // Velocidad al borrar
+          loop: true, // Hacer que se repita
+        });
+
+    return () => typed.destroy(); // Destruir la instancia al desmontar
+  }, []);
+
+  return (
+    <div className={styTyp.container}>
+  <span id="typed-text" className={styTyp.typedText}></span>
+</div>
+  );
+};

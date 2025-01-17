@@ -48,3 +48,17 @@
     font-size:medium;
     line-height: 1.5;
   }
+  /* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .stepTitle {
+    font-size: 1.5rem; /* Reducir tamaño en pantallas más chicas */
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .stepTitle {
+    font-size: 1.2rem; /* Aún más pequeño en pantallas muy chicas */
+    margin: 5px 0;
+  }
+}

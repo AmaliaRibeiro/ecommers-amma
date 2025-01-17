@@ -1,12 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; 
 import styles from "./Sale.module.css"; 
+import homeVideo from "../videos/lovers.mp4";
 
 const Sale = () => {
     const navigate = useNavigate(); // Inicializar el hook para redirigir
 
     const handleButtonClick = () => {
-      navigate("src/Pages/Offers.jsx"); // Redirige a la página de ofertas
+      navigate("../offers"); // Redirige a la página de ofertas
     };
   return (
     <div className={styles.container}>
@@ -15,7 +16,7 @@ const Sale = () => {
       <div className={styles.videoContainer}>
         <video
           className={styles.video}
-          src="./videos/LOVERS.mp4" 
+          src={homeVideo} 
           controls
           autoPlay
           loop

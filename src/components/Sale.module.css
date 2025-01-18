@@ -1,5 +1,5 @@
 .container {
-    background-color: #f5f5f5; /* Fondo claro */
+    background-color: #000000; /* Fondo claro */
     text-align: center; /* Centrar contenido */
     padding: 20px;
     margin: 20px auto;
@@ -10,14 +10,14 @@
   
   .title {
     font-size: 2rem;
-    color: #e63946;
+    color: #f30373;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
   .subtitle {
     font-size: 1.2rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   
@@ -41,7 +41,7 @@
   }
   
   .button {
-    background-color: #e63946;
+    background-color: #f30373;
     color: #fff;
     padding: 10px 20px;
     border: none;

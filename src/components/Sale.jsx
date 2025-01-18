@@ -12,7 +12,7 @@ const Sale = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>¡SALE! 🌟</h2>
-      <p className={styles.subtitle}>Disfruta de nuestras promociones exclusivas</p>
+      <p className={styles.subtitle}>¡Descubrí nuestras promociones exclusivas!</p>
       <div className={styles.videoContainer}>
         <video
           className={styles.video}
@@ -23,7 +23,7 @@ const Sale = () => {
           muted
         ></video>
       </div>
-      <button className={styles.button} onClick={handleButtonClick}>¡Descúbrelo ahora!</button>
+      <button className={styles.button} onClick={handleButtonClick}>Ver ahora</button>
     </div>
   );
 };

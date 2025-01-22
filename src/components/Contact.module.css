@@ -9,7 +9,7 @@
   align-items: center;
   height: 450px;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .formulario {
@@ -70,14 +70,50 @@
   text-align: center;
   font-family: "Arial", sans-serif;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  margin: auto;
   transition: transform 0.3s ease;
 }
 .card:hover {
   transform: translateY(-5px); /* Animación al pasar el mouse */
 }
+.titleCard {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.subtVenta {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.subOnline {
+  font-size: 14px;
+  margin: 8px 0;
+}
 .containerIcons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 80px;
+  margin-bottom: 80px;
+  
+}
+.icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #f800c6;;
+  border-radius: 50%;
+  font-size: 55px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #fcfcfc;
+}
+
+.icon:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

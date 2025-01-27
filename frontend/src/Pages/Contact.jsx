@@ -21,12 +21,15 @@ export const Contact = () => {
           [e.target.name]: e.target.value,
         });
       };
-    
+
+      const [isLoading, setIsLoading] = useState(false);
+
       const handleSubmit = async (e) => {
         e.preventDefault(); // Evita que la página se recargue
+        setIsLoading(true); // Activa el indicador de carga
     
         try {
-          const response = await fetch("https://tuservidor.com/api/contacto", {
+          const response = await fetch("http://localhost:5000/api/contacto", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -36,12 +39,15 @@ export const Contact = () => {
     
           if (response.ok) {
             alert("Mensaje enviado correctamente");
+            setFormData({ nombre: "", apellido: "", email: "", mensaje: "" });
           } else {
             alert("Hubo un error al enviar el mensaje");
           }
         } catch (error) {
           console.error("Error al enviar el formulario:", error);
           alert("Error al conectar con el servidor");
+        } finally {
+          setIsLoading(false); // Desactiva el indicador de carga
         }
       };
     
@@ -55,7 +61,7 @@ export const Contact = () => {
                     <p className={contact.subtVenta}>Venta online</p>
 
                     <p className={contact.subOnline}>¡Encontranos en nuestras redes sociales!</p>
-                    <p className={contact.subOnline}>Haz click en alguno de estos íconos y te rediccionará a nuestra red social elegida.</p>
+                    <p className={contact.subOnline}>Haz click en cualquiera de estos íconos para visitar nuestra red social preferida.</p>
                     <div className={contact.containerIcons}>
                         <a href="https://www.instagram.com/amma_ribeicoiro_zapatos/" target="_blank" className={contact.icon}><FaInstagram /></a>
                         <a href="https://www.facebook.com/profile.php?id=100080571537645" target="_blank" className={contact.icon}><FaFacebook /></a>
@@ -101,8 +107,8 @@ export const Contact = () => {
                             className={contact.textarea}
                             required
                         />
-                        <button type="submit" className={contact.button}>
-                            Enviar
+                        <button type="submit" className={contact.button} disabled={isLoading}>
+                        {isLoading ? "Enviando..." : "Enviar"}
                         </button>
                     </form>
                 </div>

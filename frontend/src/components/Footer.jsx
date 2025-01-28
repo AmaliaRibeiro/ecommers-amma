@@ -52,7 +52,7 @@ function Footer() {
 
                     <div className={bgFooter.finally}>
 
-                        <Col className={bgFooter.textItem}>Copyright By Amma Shoes-2023</Col>
+                        <Col className={bgFooter.textItem}>Copyright By Amma Shoes-2025</Col>
                         <Col className={bgFooter.textItem}>Todos los derechos reservados</Col>
 
                     </div>

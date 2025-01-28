@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import menu from "./DropdownMenu.module.css"
+
 const DropdownMenu = ({ label, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +18,7 @@ const DropdownMenu = ({ label, items }) => {
 
       {isOpen && (
         <div
-          className="absolute right-0 w-48 mt-2 origin-top-right bg-white border border-gray-200 rounded shadow-lg"
+          className={menu.containerMenu}
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
         >
@@ -24,7 +26,7 @@ const DropdownMenu = ({ label, items }) => {
             <Link
               key={index}
               to={item.href}
-              className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+              className="block px-4 py-2 text-white hover:bg-gray-600 no-underline"
             >
               {item.text}
             </Link>

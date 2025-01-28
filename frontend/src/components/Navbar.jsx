@@ -55,6 +55,7 @@ if(!cartItems) {
                         <Link className={`${BgNavbar.a} text-base sm:text-lg md:text-xl lg:text-2xl`} 
                         to="/products">
                            <DropdownMenu
+                              className={BgNavbar.menu}
                               label="Productos"
                               items={productMenuItems}
                            />

@@ -38,6 +38,14 @@
   display: none; /* Opcional: quita el icono de flecha */
 }
 
+.navItem {
+  z-index: 20; /* Mayor que el carrusel */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Mejor apariencia */
+  background-color: #10100e !important;
+ 
+}
+
+
 @media (max-width: 768px) { 
 .divisorVertical {
   display: flex;

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { ProductCard }  from './ProductCard';
 import { useCart } from '../contexts/CartContexts';
+import styles from './products.module.css';
 
-import calzadoInvierno1 from '../images/fondosImages/whiteShoes.jpg';
-import calzadoInvierno2 from '../images/fondosImages/blackShoes.jpg';
+import calzadoInvierno1 from '../images/ZapatosWinter/botaBeige.jpg';
+import calzadoInvierno2 from '../images/ZapatosWinter/BotaRoja.jpg';
+import calzadoInvierno3 from '../images/ZapatosWinter/botaDoble.jpg';
 
 export const ProductList = () => {
 
@@ -23,13 +25,19 @@ export const ProductList = () => {
         price: 49.99,
         image: calzadoInvierno2, // URL de imagen de ejemplo
       },
+      {
+        id: 3,
+        name: 'Calzado Invierno3',
+        price: 49.99,
+        image: calzadoInvierno3, // URL de imagen de ejemplo
+      },
       // Agrega más productos aquí
     ];
   
   
     return (
         
-        <div className="flex flex-wrap justify-center">
+        <div className={styles.containerCard}>
         {products.map(product => (
           <ProductCard 
             key={product.id} 

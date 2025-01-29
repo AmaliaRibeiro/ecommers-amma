@@ -1,13 +1,79 @@
 .containerProducts {
- padding: 20px;
-    color: white;
-    margin-right: 35px;
+    background-color: rgba(138, 138, 138, 0.865);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 1.5px solid;
+    margin-bottom: 3%;
+}
+.containerProducts:hover {
+    transform: translateY(-5px); /* Animación al pasar el mouse */
 }
 .links {
     text-decoration: none;
     color: white;
 }
-h1 {
-    padding: 10px;
-    margin-left: 20px;
+.h1 {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.containerCard {
+    display:flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+}
+.Card {
+    width: 280px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.Card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.Card .info {
+    padding: 15px;
+    text-align: center;
+}
+.Card .info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E63946;
+}
+.buton {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 15px;
+    background: #E63946;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.buton:hover {
+    background: #D62839;
 }

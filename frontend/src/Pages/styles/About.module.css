@@ -1,0 +1,29 @@
+.about {
+    border: 1.5px solid;
+    border-left: 0;
+    border-right: 0;
+    color: #ffffff !important; /* Estilo de línea vertical */
+    padding: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+.aboutText{
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border: 1.5px solid;
+}
+.containerAbout {
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}

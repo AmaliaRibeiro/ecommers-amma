@@ -34,6 +34,10 @@ export const ProductList = () => {
       // Agrega más productos aquí
     ];
   
+    const handleAddToCart = (product) => {
+      const productWithQuantity = { ...product, quantity: 1 };  // Agrega la cantidad inicial
+      addToCart(productWithQuantity);  // Llama a la función para agregar al carrito
+    };
   
     return (
         
@@ -42,7 +46,7 @@ export const ProductList = () => {
           <ProductCard 
             key={product.id} 
             product={product} 
-            onAddToCart={addToCart} 
+            onAddToCart={() => handleAddToCart(product)}  // Pasa el producto y la función para agregarlo al carrito
           />
         ))}
       </div>

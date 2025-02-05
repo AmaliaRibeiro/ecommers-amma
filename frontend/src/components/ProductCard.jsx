@@ -20,11 +20,12 @@ export const ProductCard = ({ product, onAddToCart }) => {
     if (!product) {
         return <div>Producto no disponible</div>; // Mostrar un mensaje si no hay producto
     }
-
     return (
         <div className={style.containerCard}>
             <div className={style.Card}>
-                <img src={imageUrl} alt={product.name} />
+                <div className={style.imgContainer}>
+                    <img src={imageUrl} alt={product.name} className={style.productImg} />
+                </div>
                 <div className={style.info}>
                     <h3>{product.name}</h3>
                     <p className={style.price}>${product.price.toFixed(2)}</p>

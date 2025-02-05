@@ -2,45 +2,30 @@ import React, { useState } from 'react';
 import { ProductCard }  from './ProductCard';
 import { useCart } from '../contexts/CartContexts';
 import styles from './products.module.css';
+import { categories } from '../data/products';
 
-import calzadoInvierno1 from '../images/ZapatosWinter/botaBeige.jpg';
-import calzadoInvierno2 from '../images/ZapatosWinter/BotaRoja.jpg';
-import calzadoInvierno3 from '../images/ZapatosWinter/botaDoble.jpg';
 
 export const ProductList = () => {
 
     const { addToCart } = useCart();
+    const [selectedCategory, setSelectedCategory] = useState('productosInvierno') 
+    
+    const products = categories[selectedCategory];
 
-    // Ejemplo de productos
-    const products = [
-      {
-        id: 1,
-        name: 'Calzado Invierno',
-        price: 59.99,
-        image: calzadoInvierno1, // URL de imagen de ejemplo
-      },
-      {
-        id: 2,
-        name: 'Calzado Invierno2',
-        price: 49.99,
-        image: calzadoInvierno2, // URL de imagen de ejemplo
-      },
-      {
-        id: 3,
-        name: 'Calzado Invierno3',
-        price: 49.99,
-        image: calzadoInvierno3, // URL de imagen de ejemplo
-      },
-      // Agrega más productos aquí
-    ];
-  
     const handleAddToCart = (product) => {
       const productWithQuantity = { ...product, quantity: 1 };  // Agrega la cantidad inicial
       addToCart(productWithQuantity);  // Llama a la función para agregar al carrito
     };
   
     return (
-        
+        <>
+         <div>
+      <select onChange={(e) => setSelectedCategory(e.target.value)} value={selectedCategory}>
+        <option value="productosInvierno">productosInvierno</option>
+        <option value="productosVerano">productosVerano</option>
+        <option value="productosBikinis">productosBikini</option>
+      </select>
+
         <div className={styles.containerCard}>
         {products.map(product => (
           <ProductCard 
@@ -50,7 +35,8 @@ export const ProductList = () => {
           />
         ))}
       </div>
-
+      </div>
+      </>
     );
   };
   

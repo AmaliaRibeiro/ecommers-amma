@@ -7,7 +7,7 @@ export const Winter = () => {
         <>
             <div>
                 <h1 className="text-2xl font-bold text-center my-4 text-white">Calzados de Invierno</h1>
-                <ProductList /> {/* Renderiza la lista de productos */}
+                <ProductList category="productosInvierno"/> {/* Renderiza la lista de productos */}
             </div>
         </>
     )

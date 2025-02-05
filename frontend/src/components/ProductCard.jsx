@@ -1,7 +1,7 @@
 import React from 'react';
 
 import calzadoInvierno1 from '../images/ZapatosWinter/botaBeige.jpg';
-import calzadoInvierno2 from '../images/ZapatosWinter/botaRoja.jpg';
+import calzadoInvierno2 from '../images/ZapatosWinter/BotaRoja.jpg';
 import blackShoes from '../images/ZapatosWinter/botaDoble.jpg';
 
 import style from './products.module.css';

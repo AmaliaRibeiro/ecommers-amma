@@ -5,7 +5,7 @@ export const Deportiva = () => {
     return (
         <div>
             <h1 className="text-2xl font-bold text-center my-4 text-white">Ropa deportiva Seamless</h1>
-            <ProductList /> {/* Renderiza la lista de productos */}
+            <ProductList category="productosDeportivos" /> {/* Renderiza la lista de productos */}
         </div>
     )
 }

@@ -5,10 +5,10 @@ import Row from 'react-bootstrap/Row';
 
 import bgCarousel from './Carousel.module.css'
 
-import imagen1 from '../images/fondosImages/ropadepor.jpg'
-import imagen2 from '../images/fondosImages/zapasDepor.jpg'
-import imagen3 from '../images/fondosImages/biki.jpg'
-import imagen4 from '../images/fondosImages/otono.jpg'
+const imagen1 = '/images/fondosImages/ropadepor.jpg'
+const imagen2 = '/images/fondosImages/zapasDepor.jpg'
+const imagen3 = '/images/fondosImages/biki.jpg'
+const imagen4 = '/images/fondosImages/otono.jpg'
 
 
 function Carousel() {

@@ -24,6 +24,7 @@ export const ProductList = () => {
         <option value="productosInvierno">productosInvierno</option>
         <option value="productosVerano">productosVerano</option>
         <option value="productosBikinis">productosBikini</option>
+        <option value="productosDeportivos">productosDeportivos</option>
       </select>
 
         <div className={styles.containerCard}>

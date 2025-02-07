@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import BgNavbar from "./Navbar.module.css"
 
-import AmmaLogo from '../images/fondosImages/ammaLogo.png';
+const AmmaLogo = '/images/fondosImages/ammaLogo.png';
 
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import { useCart } from '../contexts/CartContexts'; // Importa tu contexto
